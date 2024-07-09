@@ -1,0 +1,111 @@
+<view class="body">
+
+<form bindsubmit="">
+  <view style="display:flex; flex-direction:row; justify-content: space-between;">
+    <view style="font-weight: bold;">
+      获取菜谱数据
+    </view>
+    <view>
+      <button type="primary" size="mini" bindtap="update">刷新</button>
+    </view>
+  </view>
+  <text>\n</text>
+    <!-- 菜谱列表 -->
+    <!-- <view style="text-align: center; font-size: 20px; font-weight: bold;">胡萝卜土豆炖肉</view> -->
+    <view wx:if="{{showRecipes.carrotPotato}}" style="text-align: center; font-size: 20px; font-weight: bold;">胡萝卜土豆炖肉</view>
+    <view wx:if="{{showRecipes.carrotPotato}}" class="box">
+    <!-- 详细内容 -->
+    <view class="food_menu_list">
+        <image class="image_food" src="../menu_image/1.jpg" justify-content: center; />
+        <view class="view_description">
+          <text style="font-size: 15px; font-weight: bold; color: red;">食材准备：\n</text>
+          <text style="font-size: 15px; font-weight: light; color: black;">胡萝卜 土豆 猪肉 青椒\n</text>
+          <text style="font-size: 15px; font-weight: bold; color: green;">具体步骤：\n</text>
+          <text style="font-size: 15px; color: black;">1.胡萝卜、土豆去皮切块，青椒切片，猪肉切片备用。
+          2.锅中加油烧热，放入葱姜蒜爆香，加入猪肉片翻炒至变色。
+          3.加入胡萝卜块和土豆块，翻炒几分钟。
+          4.倒入适量生抽和料酒，加水没过食材，炖煮20分钟。
+          5.最后加入青椒片，加盐调味，翻炒均匀即可。\n</text>
+          <text>\n</text>
+        </view>
+      </view>
+    </view>
+
+    <view wx:if="{{showRecipes.appleBanana}}" style="text-align: center; font-size: 20px; font-weight: bold;">苹果香蕉奶昔</view>
+    <!-- <view style="text-align: center; font-size: 20px; font-weight: bold;">苹果香蕉奶昔</view> -->
+    <view wx:if="{{showRecipes.appleBanana}}" class="box">
+      <!-- 详细内容 -->
+      <view class="food_menu_list">
+        <image class="image_food" src="../menu_image/2.jpg" justify-content: center; />
+        <view class="view_description">
+          <text style="font-size: 15px; font-weight: bold; color: red;">食材准备：\n</text>
+          <text style="font-size: 15px; font-weight: light; color: black;">苹果 香蕉 牛奶 蜂蜜适量\n</text>
+          <text style="font-size: 15px; font-weight: bold; color: green;">具体步骤：\n</text>
+          <text style="font-size: 15px; color: black;">1.苹果去皮切块，香蕉去皮切段。
+          2.将苹果块、香蕉段和牛奶放入搅拌机中搅拌均匀。
+          3.加入蜂蜜调味，即可饮用。\n</text>
+          <text>\n</text>
+        </view>
+      </view>
+    </view>
+
+    <view wx:if="{{showRecipes.lemonPotato}}" style="text-align: center; font-size: 20px; font-weight: bold;">柠檬土豆沙拉</view>
+    <!-- <view style="text-align: center; font-size: 20px; font-weight: bold;">柠檬土豆沙拉</view> -->
+    <view wx:if="{{showRecipes.lemonPotato}}" class="box">
+      <!-- 详细内容 -->
+      <view class="food_menu_list">
+        <image class="image_food" src="../menu_image/3.jpg" justify-content: center; />
+        <view class="view_description">
+          <text style="font-size: 15px; font-weight: bold; color: red;">食材准备：\n</text>
+          <text style="font-size: 15px; font-weight: light; color: black;">土豆 柠檬 青椒 盐 橄榄油 黑胡椒粉\n</text>
+          <text style="font-size: 15px; font-weight: bold; color: green;">具体步骤：\n</text>
+          <text style="font-size: 15px; color: black;">1.土豆去皮煮熟切块，青椒洗净切块。
+          2.柠檬挤汁备用。
+          3.将土豆块、青椒块放入碗中，加入柠檬汁、盐、橄榄油和黑胡椒粉拌匀即可。\n</text>
+          <text>\n</text>
+        </view>
+      </view>
+    </view>
+
+    <view wx:if="{{showRecipes.daikonChiken}}" style="text-align: center; font-size: 20px; font-weight: bold;">白萝卜清炖鸡汤</view>
+    <!-- <view style="text-align: center; font-size: 20px; font-weight: bold;">白萝卜清炖鸡汤</view> -->
+    <view wx:if="{{showRecipes.daikonChiken}}" class="box">
+      <!-- 详细内容 -->
+      <view class="food_menu_list">
+        <image class="image_food" src="../menu_image/4.jpg" justify-content: center; />
+        <view class="view_description">
+          <text style="font-size: 15px; font-weight: bold; color: red;">食材准备：\n</text>
+          <text style="font-size: 15px; font-weight: light; color: black;">白萝卜 鸡肉 盐 姜片 葱段\n</text>
+          <text style="font-size: 15px; font-weight: bold; color: green;">具体步骤：\n</text>
+          <text style="font-size: 15px; color: black;">1.白萝卜去皮切块，鸡肉洗净切块。
+          2.锅中加水烧开，放入鸡肉块焯水去腥。
+          3.另起锅加水烧开，放入鸡肉块、姜片和葱段。
+          4.炖煮30分钟后加入白萝卜块，继续炖煮20分钟。
+          5.加盐调味，即可食用。\n</text>
+          <text>\n</text>
+        </view>
+      </view>
+    </view>
+
+    <view wx:if="{{showRecipes.eggplantPepper}}" style="text-align: center; font-size: 20px; font-weight: bold;">茄子青椒炒肉</view>
+    <!-- <view style="text-align: center; font-size: 20px; font-weight: bold;">茄子青椒炒肉</view> -->
+    <view wx:if="{{showRecipes.eggplantPepper}}" class="box">
+      <!-- 详细内容 -->
+      <view class="food_menu_list">
+        <image class="image_food" src="../menu_image/5.jpg" justify-content: center; />
+        <view class="view_description">
+          <text style="font-size: 15px; font-weight: bold; color: red;">食材准备：\n</text>
+          <text style="font-size: 15px; font-weight: light; color: black;">茄子 青椒 猪肉 盐 生抽 料酒 蒜末\n</text>
+          <text style="font-size: 15px; font-weight: bold; color: green;">具体步骤：\n</text>
+          <text style="font-size: 15px; color: black;">1.茄子洗净切条，青椒洗净切片，猪肉切片备用。
+          2.锅中加油烧热，放入蒜末爆香，加入猪肉片翻炒至变色。
+          3.加入茄子条和青椒片翻炒几分钟。
+          4.倒入适量生抽和料酒调味，继续翻炒至熟透即可。\n</text>
+          <text>\n</text>
+        </view>
+      </view>
+    </view>
+    <text>\n</text>
+</form>
+
+</view>

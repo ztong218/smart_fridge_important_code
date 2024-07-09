@@ -1,0 +1,52 @@
+.body {
+  margin: 10rpx 20rpx;
+}
+
+.box {
+  padding: 0rpx 20rpx;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.cell {
+  margin-top: 10rpx;
+  margin-bottom: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  width: 50%;
+  text-align: left;
+}
+
+.right {
+  width: 40%;
+  text-align: right;
+}
+
+.unit {
+  width: 10%;
+  text-align: right;
+}
+
+.view_food_list {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px
+}
+.image_food {
+  width: 70px;
+  height: 70px;
+}
+.view_description {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.text_small{
+   font-size: 27rpx;
+   word-break:break-all;
+   color: #7a7878
+}

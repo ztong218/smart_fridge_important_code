@@ -1,0 +1,110 @@
+<view class="body">
+
+  <form bindsubmit="">
+    <view style="display:flex; flex-direction:row; justify-content: space-between;">
+      <view style="font-weight: bold;">
+        更新食物数据
+      </view>
+      <view>
+        <button type="primary" size="mini" name="detectStart" data-item="detectStart" bindtap="detectStartFunction">开始检测</button>
+      </view>
+      <view>
+        <button type="primary" size="mini" bindtap="update">更新数据</button>
+      </view>
+      <view>
+        <button type="primary" class="submit" size="mini" bindtap="ClickJump_menu">菜谱推荐</button>
+      </view>
+    </view>
+    <text>\n</text>
+    <!-- 水果列表 -->
+    <view style="text-align: center; font-size: 15px; font-weight: bold;">水果</view>
+    <view class="box">
+      <!-- 苹果清单 -->
+      <view class="view_food_list">
+        <image class="image_food" src="../food_image/apple.jpg" />
+        <view class="view_description">
+          <text>苹果</text>
+          <text class="text_small">数量：{{stateReported.food[0].quantity}} 个</text>
+          <text class="text_small">存放日期：{{stateReported.food[0].storageData}}</text>
+          <text class="text_small">剩余保质期：{{stateReported.food[0].period}} 天</text>
+        </view>
+      </view>
+      <!-- 香蕉清单 -->
+      <view class="view_food_list">
+        <image class="image_food" src="../food_image/banana.jpg" />
+        <view class="view_description">
+          <text>香蕉</text>
+          <text class="text_small">数量：{{stateReported.food[1].quantity}} 个</text>
+          <text class="text_small">存放日期：{{stateReported.food[1].storageData}}</text>
+          <text class="text_small">剩余保质期：{{stateReported.food[1].period}} 天</text>
+        </view>
+      </view>
+      <!-- 柠檬清单 -->
+      <view class="view_food_list">
+        <image class="image_food" src="../food_image/lemon.jpg" />
+        <view class="view_description">
+          <text>柠檬</text>
+          <text class="text_small">数量：{{stateReported.food[2].quantity}} 个</text>
+          <text class="text_small">存放日期：{{stateReported.food[2].storageData}}</text>
+          <text class="text_small">剩余保质期：{{stateReported.food[2].period}} 天</text>
+        </view>
+      </view>
+    </view>
+    <text>\n</text>
+    <!-- 蔬菜列表 -->
+    <view style="text-align: center; font-size: 15px; font-weight: bold;">蔬菜</view>
+    <view class="box">
+      <!-- 胡萝卜清单 -->
+      <view class="view_food_list">
+        <image class="image_food" src="../food_image/carrot.jpg" />
+        <view class="view_description">
+          <text>胡萝卜</text>
+          <text class="text_small">数量：{{stateReported.food[3].quantity}} 个</text>
+          <text class="text_small">存放日期：{{stateReported.food[3].storageData}}</text>
+          <text class="text_small">剩余保质期：{{stateReported.food[3].period}} 天</text>
+        </view>
+      </view>
+      <!-- 白萝卜清单 -->
+      <view class="view_food_list">
+        <image class="image_food" src="../food_image/daikon.jpg" />
+        <view class="view_description">
+          <text>白萝卜</text>
+          <text class="text_small">数量：{{stateReported.food[4].quantity}} 个</text>
+          <text class="text_small">存放日期：{{stateReported.food[4].storageData}}</text>
+          <text class="text_small">剩余保质期：{{stateReported.food[4].period}} 天</text>
+        </view>
+      </view>
+      <!-- 青椒清单 -->
+      <view class="view_food_list">
+        <image class="image_food" src="../food_image/pepper.jpg" />
+        <view class="view_description">
+          <text>青椒</text>
+          <text class="text_small">数量：{{stateReported.food[5].quantity}} 个</text>
+          <text class="text_small">存放日期：{{stateReported.food[5].storageData}}</text>
+          <text class="text_small">剩余保质期：{{stateReported.food[5].period}} 天</text>
+        </view>
+      </view>
+      <!-- 茄子清单 -->
+      <view class="view_food_list">
+        <image class="image_food" src="../food_image/eggplant.jpg" />
+        <view class="view_description">
+          <text>茄子</text>
+          <text class="text_small">数量：{{stateReported.food[6].quantity}} 个</text>
+          <text class="text_small">存放日期：{{stateReported.food[6].storageData}}</text>
+          <text class="text_small">剩余保质期：{{stateReported.food[6].period}} 天</text>
+        </view>
+      </view>
+      <!-- 土豆清单 -->
+      <view class="view_food_list">
+        <image class="image_food" src="../food_image/potato.jpg" />
+        <view class="view_description">
+          <text>土豆</text>
+          <text class="text_small">数量：{{stateReported.food[7].quantity}} 个</text>
+          <text class="text_small">存放日期：{{stateReported.food[7].storageData}}</text>
+          <text class="text_small">剩余保质期：{{stateReported.food[7].period}} 天</text>
+        </view>
+      </view>
+    </view>
+    <text>\n</text>
+  </form>
+</view>

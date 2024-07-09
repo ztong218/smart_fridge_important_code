@@ -1,0 +1,40 @@
+.body {
+  margin: 10rpx 20rpx;
+}
+
+.box {
+  padding: 0rpx 20rpx;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.cell {
+  margin-top: 10rpx;
+  margin-bottom: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  width: 50%;
+  text-align: left;
+}
+
+.right {
+  width: 40%;
+  text-align: right;
+}
+
+.unit {
+  width: 10%;
+  text-align: right;
+}
+
+.image_food {  
+  width: 300px; /* 设置图片的宽度，根据需要调整 */  
+  height: 210px; /* 设置图片的高度，根据需要调整 */  
+  display: block; /* 将图片设置为块级元素 */  
+  margin: 0 auto; /* 水平居中 */  
+  /* 如果需要垂直居中，可以设置父容器的样式 */  
+}  

@@ -1,0 +1,16 @@
+{
+  "name": "hi3861openharmony-master",
+  "version": "1.0.0",
+  "description": "微信小程序连接腾讯云部分参考了腾讯github智慧农业的开源项目：https://github.com/OpenAtomFoundation/TencentOS-tiny/tree/master\r 适用于OpenHarmony 开源项目的Hi3861V100硬件、软件\r 基于UDP协议实现微信小程序、Hi3861V100板端的局域网交互\r 基于MQTT协议实现微信小程序云端、Hi3861V100板端的交互",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.11.6",
+    "miniprogram-sm-crypto": "^0.3.13",
+    "tencentcloud-sdk-nodejs": "^3.0.77"
+  }
+}

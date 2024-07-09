@@ -1,0 +1,33 @@
+<view class="body">
+
+<form bindsubmit="">
+  <view style="display:flex; flex-direction:row; justify-content: space-between;">
+    <view style="font-weight: bold;">
+      更新临期数据
+    </view>
+    <view>
+      <button type="primary" size="mini" bindtap="update">刷新</button>
+    </view>
+  </view>
+
+  <!-- 即将过期食物列表 -->
+  <view style="text-align: center; font-size: 15px; font-weight: bold; color: blue;">即将过期</view>
+  <view class="box">
+    <text wx:for="{{soonExpireFood}}" wx:key="index">
+    {{item.name}} - 数量: {{item.quantity}} - 剩余保质期: {{item.period}}天\n
+  </text>
+    <text>\n</text>
+  </view>
+  <text>\n</text>
+  <!-- 已经过期食物列表 -->
+  <view style="text-align: center; font-size: 15px; font-weight: bold; color: red;">已经过期</view>
+  <view class="box">
+    <text wx:for="{{expiredFood}}" wx:key="index">
+    {{item.name}} - 数量: {{item.quantity}} - 剩余保质期: {{item.period}}天\n
+  </text>
+    <text>\n</text>
+  </view>
+  <text>\n</text>
+</form>
+
+</view>
