@@ -2,11 +2,11 @@
 App({
   globalData: {
     // 腾讯云物联网通信平台中获取 产品ID和设备名称
-    productId: "DI5K7YYGE7", // 产品ID
-    deviceName: "hi3516_mqtt", // 设备名称
+    productId: "DI------E7", // 产品ID
+    deviceName: "hi----6_mqtt", // 设备名称
     // 腾讯云控制台-访问管理-访问密钥-API密钥管理中获取 SecretId, SecretKey
-    secretId: "AKID7PqRCnNrMlBgoKucesBfvHct0COYhwGT",
-    secretKey: "REyfGk4JQPJ6lIl7NWdaMIDLMA1qkn2T",
+    secretId: "AK----------------------------wGT",
+    secretKey: "RE-------------------------n2T",
   },
   onLaunch: function () {
     if (!wx.cloud) {
